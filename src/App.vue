@@ -1,30 +1,54 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+	<div class="wrapper">
+		<the-header></the-header>
+		<base-container>
+			<game-page></game-page>
+		</base-container>
+		<the-footer></the-footer>
+	</div>
 </template>
 
+<script>
+import BaseContainer from "/src/components/ui/BaseContainer.vue";
+import TheFooter from "/src/components/TheFooter.vue";
+import TheHeader from "/src/components/TheHeader.vue";
+import GamePage from "/src/components/games/chronicles-of-crime/GamePage.vue";
+
+export default {
+	components: {
+		BaseContainer,
+		TheFooter,
+		TheHeader,
+		GamePage,
+	},
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "assets/css/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body,
+input,
+textarea,
+button {
+	background-color: #110c19;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	color: #ffffff;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a {
+	text-decoration: none;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+li {
+	list-style: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 </style>
