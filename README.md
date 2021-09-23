@@ -1,24 +1,7 @@
-# bordergame-app
+# Board Games
 
-## Project setup
-```
-npm install
-```
+## О проекте
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Статичный сайт на Vue.js для более удобного прохождения настольной игры "Место преступления"
+- В репозитории отсутствуют контентные изображения
+- Создан для запуска преимущественно на мобильных устройствах
